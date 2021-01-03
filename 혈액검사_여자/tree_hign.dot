@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="bt_sgot <= 51.5\ngini = 0.293\nsamples = 326\nvalue = [268, 58]\nclass = Good", fillcolor="#eb9c64"] ;
+1 [label="bt_wbc <= 3975.0\ngini = 0.267\nsamples = 309\nvalue = [260, 49]\nclass = Good", fillcolor="#ea995e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="bt_gluc <= 83.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]\nclass = Good", fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label="gini = 0.32\nsamples = 5\nvalue = [4, 1]\nclass = Good", fillcolor="#eca06a"] ;
+2 -> 3 ;
+4 [label="gini = 0.32\nsamples = 5\nvalue = [1, 4]\nclass = Bad", fillcolor="#6ab6ec"] ;
+2 -> 4 ;
+5 [label="waist <= 73.5\ngini = 0.251\nsamples = 299\nvalue = [255, 44]\nclass = Good", fillcolor="#e9975b"] ;
+1 -> 5 ;
+6 [label="gini = 0.117\nsamples = 96\nvalue = [90, 6]\nclass = Good", fillcolor="#e78946"] ;
+5 -> 6 ;
+7 [label="gini = 0.304\nsamples = 203\nvalue = [165, 38]\nclass = Good", fillcolor="#eb9e67"] ;
+5 -> 7 ;
+8 [label="bt_rbc <= 415.5\ngini = 0.498\nsamples = 17\nvalue = [8, 9]\nclass = Bad", fillcolor="#e9f4fc"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 4\nvalue = [4, 0]\nclass = Good", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="bt_hct <= 43.6\ngini = 0.426\nsamples = 13\nvalue = [4, 9]\nclass = Bad", fillcolor="#91c9f1"] ;
+8 -> 10 ;
+11 [label="gini = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = Bad", fillcolor="#399de5"] ;
+10 -> 11 ;
+12 [label="gini = 0.444\nsamples = 6\nvalue = [4, 2]\nclass = Good", fillcolor="#f2c09c"] ;
+10 -> 12 ;
+}
